@@ -1,0 +1,705 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Rleud';
+    src: url(fonts/rleud-cond-demi.ttf);
+    src: url(fonts/rleud-cond-bold.ttf);
+}
+
+@font-face {
+    font-family: 'Dinpro';
+    src:url(fonts/dinpro-condbold.otf);
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Dinpro';
+    src:url(fonts/dinpro-condmedium.otf);
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'Dinpro';
+    src:url(fonts/dinpro-condblack.otf);
+    font-weight: 500;
+}
+
+* { 
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dinpro';
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    margin: 0px;
+    padding: 0;
+}
+header {
+    background-color: rgb(0, 217, 255);
+    padding: 22px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    min-height: 10px;
+}
+
+footer {
+    margin: 2.5em;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    width: 270px;
+    cursor: pointer;
+    margin: 11px 20px 40px 20px;
+}
+
+.navbar li {
+    display: inline-block;
+    margin-left: 22px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: lighter;
+    font-size: 25px;
+    max-height: 20px;
+    text-transform: uppercase;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+    margin-left: 100px;
+    letter-spacing: 2px;
+    font-family: 'Rleud';
+}
+
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    transform-origin: center;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+.navbar a:hover::after {
+    transform: scaleX(1);
+}
+
+.fa-xl{
+    float: right;
+    color: white;
+    margin: 0px 45px 10px 0px;
+    border-radius: 10px;
+    top: 9%;
+}
+
+.img-topo {
+    background-image: url('images/image.png');
+    height: 80vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 1000px rgba(9, 112, 138, 0.397);
+}
+
+.img-topo h1, #paragrafo {
+    color: white;
+    font-family: 'Dinpro';
+    position: absolute;
+    right: 16px;
+    margin-right: 32px;
+    top: 35%;
+    font-size: 3.2vw;
+    line-height: 1.2em;
+    text-shadow: 4px 5px 9px rgba(0, 0, 0, 0.316);
+    letter-spacing: 1px;
+    text-justify: right;
+}
+
+
+#destaque-2 {
+    color: #00fef6;
+}
+
+.img-topo #paragrafo {
+    font-size: 26px;
+    top: 62%;
+    right: 10%;
+    text-shadow: 4px 5px 9px rgba(0,0,0,0.75);
+    font-weight: 100;
+}
+
+#caps {
+    text-transform: uppercase;
+}
+
+.fifadojao {
+    position: static;
+    text-align: center;
+    font-size: 1.8em;
+    margin: 3.3em;
+    max-height: 8em;
+}
+
+.nav-link {
+    margin-right: 4em;
+    right: 20%;
+}
+
+.fifadojao p {
+    text-indent: 2em;
+    font-size: 1.1em;
+    margin-top: .3em;
+    line-height: 1.5em;
+    font-weight: 200;
+    text-align: left;
+}
+
+.icons {
+    position: absolute;
+    font-size: 2px;
+    bottom: 92.5%;
+    right: 1%;
+    float: right;
+    text-align: right;
+}
+
+.icons a::after {
+    content: '';
+    height: 100%;
+    top: -100px;
+    left: 0;
+    background-color: black;
+    position: absolute;
+    transition: .5;
+}
+
+
+.box-2 > .tatica {
+    background-image: url('images/taticas.png');
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 99.1vw;
+    color: white;
+    box-shadow: inset 0 0 0 1000px rgba(3, 200, 249, 0.927);
+    filter: blur(3px);
+}
+
+.box-2 h1 {
+    text-align: center;
+    font-size: 1.8.8em;
+    padding: 2em;
+    
+}
+
+.box-2 p {
+    text-indent: 10px;
+}
+
+#highlight {
+    position: relative;
+    background-color: aqua;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    max-width: 10em;
+    text-transform: uppercase;
+}
+
+#highlight-2 {
+    position: relative;
+    background-color: aqua;
+    border-radius: 3px;
+    color: rgb(0, 0, 0);
+    max-width: 10em;
+    text-transform: uppercase;
+}
+
+#link {
+    color: #2f2fbb;
+}
+
+#faq-icon {
+    margin-top: 5em;
+}
+
+#faq {
+    margin: 2em 0 2.5em 1.5em;
+    text-transform: uppercase;
+    font-size: 3.3vh;
+}
+
+ 
+  .container {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    max-width: 45vw;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .accordion_item {
+    border-radius: 5px;
+    margin: 5px;
+  }
+  
+  .accordion_item:hover {
+    opacity: 0.9;
+  }
+  
+  .accordion_header {
+    font-size: 28px;
+    padding: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .accordion_content {
+    overflow: hidden;
+    height: 0;
+    transition: all .6s ease;
+    font-size: 16px;
+    text-align: left;
+  }
+  
+  .active {
+    padding-bottom: 10px;
+  }
+  
+  span, .icon {
+    font-weight: 600;
+  }
+  
+  p {
+    text-align: justify;
+  }
+
+  .accordion_content p {
+    font-size: 24px;
+    text-indent: 15px;
+    margin: 5px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 1168px) {
+    
+    .navbar a {
+        font-size: 0.8em;
+        margin: 1.7em;
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 110px;
+        gap: 0;
+        background-color: rgba(0, 217, 255, 0.907);
+        width: 40%;
+        height: 80%;
+        transition: 0.3s;
+        font-size: 3em;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.101) 0px 14px 28px, rgba(0, 0, 0, 0.093) 0px 10px 10px;
+    }
+
+
+    .nav-link {
+        position: fixed;
+        display: inline-block;
+        margin: 1.7em;
+        text-align: justify;
+        width: 5em;
+        height: 2em;
+    }
+
+    hr {
+        border-top: 1px solid rgb(0, 0, 0);
+    }
+
+
+    .nav-menu.active {
+        left: 0;
+        
+    }
+
+    header {
+        padding: 55px;
+        max-height: 60px;
+    }
+
+    .icons {
+        position: absolute;
+        right: 16%;
+        top: 60%;
+        width: 25em;
+        font-size: 2vw;
+        display: inline-block;
+    }
+
+
+    .logo {
+        position: absolute;
+        top: 5.5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 350px;
+    }
+
+    .img-topo #paragrafo {
+        font-size: 2vw;
+        right: 1%;
+    }
+
+    .container {
+        max-width: 75vw;
+    }
+
+    .hamburger {
+        display: block;
+
+    }
+
+    .hamburger {
+        position: absolute;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        top: 3%;
+    }
+}
+
+    @media (min-width:320px) and (max-width:1167px) {
+        
+        .img-topo #paragrafo {
+            font-size: 3.2vh;
+            left: 71vh;
+            bottom: 5vh;
+        }
+
+        .img-topo h1 {
+            font-size: 3.3vw;
+            min-width: 3vw;
+            top: 40vh;
+            left: 71vh;
+        }
+
+        .icons {
+            font-size: 24px;
+            width: 70vw;
+            right: .3vw;
+            display: inline;
+        }
+    }
+
+    @media (max-width:909px) {
+        
+        .img-topo #paragrafo {
+            font-size: 3vh;
+            left: 60vh;
+        }
+
+        .img-topo h1 {
+            font-size: 3.9vw;
+            min-width: 3vw;
+            top: 40vh;
+            left: 60vh;
+        }
+    }
+
+    @media (max-width:832px) {
+        
+        .img-topo #paragrafo {
+            font-size: 3vh;
+            left: 52vh;
+        }
+
+        .img-topo h1 {
+            font-size: 3.9vw;
+            min-width: 3vw;
+            top: 43vh;
+            left: 52vh;
+        }
+    }
+
+    @media only screen and (max-width: 767px) {
+        
+        .img-topo #paragrafo {
+            font-size: 4vw;
+            top: 72vh;
+            left: 50vw;
+            text-shadow: 4px 5px 9px rgba(0, 0, 0, 0.879);
+        }
+        .img-topo h1 {
+            font-size: 5.8vw;
+            top: 40vh;
+            left: 50vw;
+            text-shadow: 4px 5px 9px rgba(0, 0, 0, 0.879);
+        }
+
+        .img-topo h1::before.nav-menu.active {
+            overflow: hidden;
+        }
+
+        .nav-menu {
+            position: absolute;
+            overflow: auto;
+        }
+    }
+
+    @media (max-width: 595px) {
+        .logo {
+            width: 50vw;
+        }
+
+        .hamburger {
+            font-size: 3.2vw;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 448px) {
+
+        .img-topo #paragrafo {
+            font-size: 4.5vw;
+            width: 40vh;
+            top: 80vh;
+            left: 17vh;
+        }
+
+        .img-topo h1 {
+            font-size: 7.5vw;
+            width: 10vw;
+            top: 53vh;
+            left: 25vw;
+        }
+            
+        .img-topo {
+            width: 140vw;
+        }
+    }
+
+    @media (max-width: 447px) {
+        .img-topo h1 {
+            font-size: 9vw;
+            width: 50vh;
+            left: 5vw;
+        }
+
+        .img-topo #paragrafo {
+            font-size: 6.5vw;
+            left: 25vw;
+        }
+
+        
+    }
+    @media (max-width: 335px) {
+        .img-topo {
+            width: 140vw;
+        }
+        .img-topo h1 {
+            font-size: 9.2vw;
+            left: 8vw;
+        }
+
+        .img-topo #paragrafo {
+            font-size: 7.5vw;
+            top: 75vh;
+        }
+
+        
+    }
+
+    @media (min-width: 320px) and (max-width: 448px) {
+        header {
+            width: 140vw;
+        }
+
+        .logo {
+            width: 80vw;
+            left: 65vw;
+        }
+
+        .hamburger {
+            left: 7vw;
+            top: 6vw;
+            font-size: 4vw;
+        }
+
+        .img-topo h1 {
+            left: 52vw;
+            font-size: 6vw;
+        }
+
+        .img-topo #paragrafo {
+            left: 52vw;
+            font-size: 6vw;
+        }
+
+        .wrap {
+            margin-left: 20vw;
+            font-size: 3vw;
+        }
+
+        .pf {
+            width: 55vw;
+            height: 15vw;
+        }
+
+        #faq {
+            font-size: 7vw;
+        }
+
+        #faq-icon {
+            width: 55vw;
+        }
+
+        .container {
+            width: 30vh;
+        }
+
+
+    }
+
+    @media (min-width: 320px) and (max-width: 448px) {
+        .img-topo #paragrafo {
+            left: 45vw;
+            font-size: 5vw;
+            width: 35vh;
+        }
+
+        .img-topo h1 {
+            left: 45vw;
+            font-size: 8vw;
+            width: 300px;
+        }
+
+        .nav-menu {
+            font-size: 7.6vw;
+        }
+
+        .fa-xl {
+            width: 15vh;
+            height: 15vw;
+        }
+    }
+
+    @media (min-width: 449px) {
+        .nav-menu {
+            font-size: 2.2em;
+        }
+
+        @media (max-width: 817px) {
+            .fa-xl {
+                width: 0.4vh;
+            }
+        }
+
+        @media (max-width: 649px) {
+            .fa-xl {
+            margin: 2.5vh;
+            font-size: 1.3em;
+        }
+
+        h2 {
+            font-size: 7vw;
+        }
+
+        #highlight-2 {
+            position: relative;
+            background-color: aqua;
+            border-radius: 3px;
+            color: rgb(0, 0, 0);
+            width: 30vh;
+            font-size: 6.5vw;
+            max-width: 13em;
+            text-transform: uppercase;
+        }
+
+        #faq-icon {
+            width: 45vw;
+        }
+
+        #faq {
+            font-size: 6vw;
+            margin: 6vw;
+        }
+        
+    }
+
+    @media (min-width: 320px) and (max-width: 337px) {
+        .img-topo {
+            width: 100vw;
+        }
+
+        header {
+            width: 100vw;
+        }
+
+        .img-topo h1 {
+            margin-right: 15vw;
+            display: contents;
+            width: 180px;
+        }
+    }
+
+    @media (min-width: 320px) and (max-width: 450px)  {
+        h2 {
+            font-size: 7vw;
+        }
+
+        #highlight-2 {
+            position: relative;
+            background-color: aqua;
+            border-radius: 3px;
+            color: rgb(0, 0, 0);
+            width: 30vh;
+            font-size: 6.5vw;
+            max-width: 13em;
+            text-transform: uppercase;
+        }
+
+        .wrap {
+            display: none;
+        }
+
+        #faq-icon {
+            width: 45vw;
+        }
+
+        #faq {
+            font-size: 6vw;
+            margin: 6vw;
+        }
+    }
+}
+    
+    
